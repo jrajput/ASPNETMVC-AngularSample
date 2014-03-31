@@ -1,0 +1,7 @@
+C:\Projects\CodeTest\MeterRateTest\bin\Debug\MeterRateTest.dll
+C:\Projects\CodeTest\MeterRateTest\bin\Debug\MeterRateTest.pdb
+C:\Projects\CodeTest\MeterRateTest\bin\Debug\MeterRate.dll
+C:\Projects\CodeTest\MeterRateTest\bin\Debug\MeterRate.pdb
+C:\Projects\CodeTest\MeterRateTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\CodeTest\MeterRateTest\obj\Debug\MeterRateTest.dll
+C:\Projects\CodeTest\MeterRateTest\obj\Debug\MeterRateTest.pdb

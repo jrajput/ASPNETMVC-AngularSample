@@ -1,0 +1,69 @@
+﻿@model MeterRate.Models.MeterRateModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="meterRateController">
+    <input type="hidden" id="hdnMeterRateModel" value='@Json.Encode(Model)'/>
+    <table>
+        <tr>
+            <td colspan="2">
+                <h1>Meter Rate App</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Number of minutes while traveling above 6 mph
+            </td>
+            <td>
+                <input type="text" ng-model="MeterRateModel.NoOfMinutes" valid-Minute/>
+                <span ng-show="IsInvalidMinute">Please put valid value.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Number of miles traveled while traveling below 6 mph
+            </td>
+            <td>
+                <input type="text" ng-model="MeterRateModel.NoOfMiles" valid-Mile/>
+                <span ng-show="IsInvalidMile">Please put valid value.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date(YYYY-MM-DD)
+            </td>
+            <td>
+                <input type="text" ng-model="MeterRateModel.DateOfRide" dateformat-Validator/>
+                <span ng-show="IsInvalidDate">Please put valid value.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Time of start(hh:mm [AM/PM])
+            </td>
+            <td>
+                <input type="text" ng-model="MeterRateModel.TimeOfStartOfRide" timeformat-Validator/>
+                <span ng-show="IsInvalidTime">Please put valid value.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Is In New York
+            </td>
+            <td>
+                <input type="checkbox"  ng-model="MeterRateModel.IsInNyState"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <input type="button" value="Calculate" ng-click="SetFareTotal()" ng-disabled="IsDisabled"/>
+            </td>
+            <td align="left">
+                <span>Total : {{MeterRateModel.TotalFare}}</span>
+            </td>
+        </tr>
+    </table>
+</div>

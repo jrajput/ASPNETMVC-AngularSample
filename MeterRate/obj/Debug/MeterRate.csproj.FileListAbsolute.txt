@@ -1,0 +1,6 @@
+C:\Projects\CodeTest\MeterRate\bin\MeterRate.dll
+C:\Projects\CodeTest\MeterRate\bin\MeterRate.pdb
+C:\Projects\CodeTest\MeterRate\bin\EntityFramework.xml
+C:\Projects\CodeTest\MeterRate\obj\Debug\MeterRate.dll
+C:\Projects\CodeTest\MeterRate\obj\Debug\MeterRate.pdb
+C:\Projects\CodeTest\MeterRate\obj\Debug\MeterRate.csprojResolveAssemblyReference.cache
